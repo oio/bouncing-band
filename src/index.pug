@@ -1,0 +1,78 @@
+doctype html
+head
+
+  title Bouncing Band
+    
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no')
+  link(rel="icon" type="image/png" href="./media/2d/favicon.png")
+  link(rel="stylesheet", href="style.styl")  
+  link(rel="preconnect" href="https://fonts.gstatic.com")
+  link(href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&display=swap" rel="stylesheet")
+ 
+  //- SEO
+  meta(name="description" content="Portable Random Orchestra")
+  link(rel="canonical" href="https://bouncing.band/")
+  meta(property="og:locale" content="en_GB")
+  meta(property="og:type" content="website")
+  meta(property="og:title" content="Bouncing Band")
+  meta(property="og:description" content="Portable Random Orchestra")
+  meta(property="og:url" content="https://bouncing.band/")
+  meta(property="og:site_name" content="Bouncing Band")
+  meta(property="og:image" content="https://bouncing.band/og1.png")
+  meta(property="og:image:secure_url" content="https://bouncing.band/og1.png")
+  meta(property="og:image:width" content="1024")
+  meta(property="og:image:height" content="683")
+  meta(name="twitter:card" content="summary_large_image")
+  meta(name="twitter:description" content="Portable Random Orchestra")
+  meta(name="twitter:title" content="Bouncing Band")
+  meta(name="twitter:site" content="@oiostudio")
+  meta(name="twitter:image" content="https://bouncing.band/og1.png")
+  meta(name="twitter:creator" content="@oiostudio")
+    
+body
+    //- splash
+    #splash    
+      .loader        
+        h2 loading 
+        h2 ...
+      .hidden.cool-stuff
+        .banner
+          h2 WebXR not supported on this device. Try reloading the page from a recent Android phone.
+        .title
+          h1 bouncing band
+        .sub
+          p 
+            |a WebXR experiment by 
+            a(href="https://oio.studio" target="_blank") oio
+          p 
+            a(href="#") about
+            |  / 
+            a(href="#") source code
+        .arrows
+          img(src="./media/2d/UI/arrows.png", alt="arrows")
+
+    //- app
+    #overlay.hidden      
+      .hints
+        img.scan(src="./media/2d/gif/scan.gif", alt="scan")
+        .copy 
+          p scan the floors and surfaces around you
+      .subhint.hidden
+        img.tap(src="./media/2d/gif/tap.gif", alt="tap")
+        p now tap to drop!
+      .gifcontainer        
+      nav.hidden
+        button.but.undo
+          img(src="./media/2d/UI/undo.png", alt="undo")
+        button.but.bomb
+          img(src="./media/2d/UI/bomb.png", alt="bomb")
+      .bottom.hidden
+        button.but.prev   
+          img(src="./media/2d/UI/arrow.png", alt="arrow")
+        .status
+          img.icon(src="./media/2d/icons/pong.png", alt="ico")
+        button.but.next
+          img(src="./media/2d/UI/arrow.png", alt="arrow")
+
+    script(src="./bounce.js")

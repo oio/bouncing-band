@@ -1,0 +1,188 @@
+@import './lib/reset.css'
+
+$butsize = 7vh
+$royal = #5551FF
+
+// mobile
+@media screen and (max-width: 700px)
+    #splash        
+        bottom 30vh          
+        h1
+            font-size 20vw
+            line-height 85% 
+        h2
+            font-size 3rem
+        .loader
+            margin-bottom 10vh
+        .title
+            width 100%
+            margin 0 auto 2vh auto
+        .sub            
+            p
+                font-size 6vw                
+                margin-bottom 9px     
+            a                  
+                border-bottom 2px solid #FFC700
+        .arrows
+            position fixed
+            width 210px
+            left 50%
+            transform translateX(-50%)
+            bottom 33px            
+        img
+            width 100% 
+
+// desktop
+@media screen and (min-width: 701px)
+    #splash              
+        bottom 38vh             
+        .loader
+            margin-bottom 10vh
+        .title
+            width 55vh  
+            margin 0 auto 
+        h2
+            font-size 3rem        
+        h1
+            font-size 10vh
+            line-height 85%
+        .sub       
+            margin-top 2vh
+            p
+                font-size 21px
+                margin-bottom 9px     
+            a                  
+                border-bottom 3px solid #FFC700
+        .arrows
+            display none
+
+
+body
+    margin 0
+    background black
+#splash
+    position fixed      
+    width 100% 
+    .banner
+        display none
+        color white
+        position fixed
+        top 50%
+        left 50%
+        transform translate(-50%, -50%) rotate(-7deg)
+        width 80vw
+        max-width 1000px
+        z-index 999
+        background black
+        border 6px solid white
+        padding 20px
+        border-radius 30px
+    h1, .sub, h2
+        color white
+        font-family 'Gaegu', sans-serif
+        text-align center
+    .title        
+        position relative        
+    .sub        
+        p            
+            width 100% 
+        a
+            text-decoration none
+            color white       
+
+#overlay
+    padding-top 3vh    
+.gifcontainer
+    width 100vw
+    height 100vh 
+    position fixed
+    top 0
+    left 0    
+    img
+        position absolute
+        height 120%
+        top 50%
+        left 50%
+        transform translate(-50%, -50%)
+.hidden
+    display none !important
+.but
+    display block
+    border none
+    width $butsize
+    height $butsize
+    background white
+    border-radius 50%
+    text-align center
+    outline none    
+    &:active
+        transform scale(1.2) rotate(5deg) 
+
+.subhint, .hints
+    width 100%
+    text-align center
+    p
+        color white
+        font-family 'Gaegu', cursive
+        text-align center
+        font-size 31px
+        line-height 107%
+.subhint
+    margin 55vh auto 0 auto    
+    img 
+        display block
+        width 30vw
+        margin 0 auto 
+.hints
+    margin 20vh auto 0 auto
+    img
+        width 50vw
+        margin-bottom 10px
+    .copy
+        width 57vw
+        margin 0 auto
+nav
+    position fixed    
+    width 95%
+    height 35px
+    left 2.5%
+    top 20px
+    opacity 1
+    display flex
+    justify-content space-between
+    z-index 2        
+    .bomb
+        img 
+            margin-top 0.61vh
+            width 3.5vh
+    .undo
+        img 
+            margin-top 0.3vh
+            width 4vh
+.bottom 
+    position fixed
+    left 50%
+    transform translateX(-50%)
+    bottom 3vh
+    width 27vh
+    height 10vh    
+    display flex
+    justify-content space-between
+    align-items center
+    .prev
+        img 
+            margin-top 0.6vh
+            width 2.3vh
+            transform scaleX(-1)
+            margin-right 0.3vh
+    .next
+        img 
+            margin-top 0.6vh
+            width 2.3vh            
+            margin-left 0.3vh   
+    .status
+        width 6vh
+        img 
+            width 100%
+canvas
+    z-index 1
