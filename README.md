@@ -6,7 +6,7 @@
 
 ## A portable random orchestra
 
-Bouncing Band turns any space in a musical instrument. Just use objects and characters from the random orchestra to create music and beats, or just fill the room with chaotic noise.
+Bouncing Band turns any space into a musical instrument. Just use objects and characters from the random orchestra to create music and beats, or just fill the room with chaotic noise.
 
 The experiment runs from a regular website in your browser, without requiring additional downloads or applications to install. Just browse to the project page [https://bouncing.band](https://bouncing.band) from a device that supports WebXR (Chrome Android 81+).
 
