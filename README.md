@@ -30,7 +30,7 @@ yarn install && yarn start
 
 Https is required by WebXR, you can use [ngrok](https://ngrok.com/) for https on local dev, there's a handy `yarn grok` command, if you have it installed.
 
-# Credits
+# oio
 
 ## [https://oio.studio](https://oio.studio)
 
