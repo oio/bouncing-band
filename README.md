@@ -40,7 +40,7 @@ A WebXR experiment by [oio](https://oio.studio), a creative company on a quest t
 
 **📐 &nbsp; Design and Development**
 
-[Matteo Loglio](https://matlo.me)
+[oio](http://oio.studio)
 
 **🔉 &nbsp; Sounds**
 
