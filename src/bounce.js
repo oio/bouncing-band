@@ -20,8 +20,6 @@
 🌐 https://oio.studio
 👩🏻‍💻 https://github.com/oio/bouncing-band
 
-by matteo loglio - matteo@oio.studio
-
 */
 
 import * as THREE from "three";
